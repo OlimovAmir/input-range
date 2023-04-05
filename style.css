@@ -1,0 +1,100 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 100px;
+    background: #6fa4ef;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.wrapper {
+    border: 4px solid rgb(54, 54, 68);
+    border-radius: 10px;
+    padding: 20px;
+    background: white;
+}
+
+.price-input {
+    width: 100%;
+    display: flex;
+}
+
+.field {
+    display: flex;
+    
+    justify-content: flex-start;
+    margin: 10px;
+}
+
+.field input {
+   margin-left: 10px;
+    text-align: center;
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.separator {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    font-size: 30px;
+
+}
+
+.slider {
+    position: relative;
+    margin: 20px 0px;
+    height: 5px;
+    background: #9d9d9d;
+    border-radius: 5px;
+}
+
+.slider .progress {
+    height: 5px;
+    background: blue;
+    border-radius: 5px;
+    position: absolute;
+    right: 25%;
+    left: 25%;
+
+}
+
+.range-input {
+    position: relative;
+}
+.range-input input {
+    position: absolute;
+    top: -25px;
+    height: 5px;
+    width: 100%;
+    pointer-events: none;
+    -webkit-appearance: none;
+    background: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    height: 17px;
+    width: 17px;
+    pointer-events: auto;
+    border-radius: 50px;
+    -webkit-appearance: none;
+    background: #17a288;
+}
+
+input[type="range"]::-moz-range-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    pointer-events: auto;
+    border-radius: 50px;
+    -moz-appearance: none;
+    background: #17a288;
+}
